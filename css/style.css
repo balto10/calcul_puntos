@@ -1,0 +1,313 @@
+@font-face { /* Définition d'une nouvelle police nommée quicksand */
+    font-family:'quicksand';
+    src: url('quicksand/Quicksand_Bold.otf');
+}
+
+
+body {
+  font-family:'quicksand', verdana, sans-serif;
+  background-color: #D6E2FE ;
+  font-size: 15px;
+}
+
+
+
+.title {
+  background-color: #445DEC ;
+  color: white;
+  text-align:center;
+}
+
+.title h1{
+  line-height: 90px;
+}
+
+.col-md-4 h2{
+  font-size:23px;
+}
+
+.row {
+  text-align: center;
+  padding: 10px;
+  margin:auto;
+  margin-top: 50px;
+}
+h2 {
+  border: solid #5B6DCD 5px;
+  background-color: #6E82F3;
+  color: white;
+}
+.title a {
+color: white;
+text-decoration: none;
+}
+
+
+.simu{
+  border-top: dashed #5B6DCD 2px;
+
+  text-align:center;
+  margin-top:4%;
+  margin-bottom:10%;
+}
+a{
+  position:relative;
+  margin-top:10%;
+  text-align:center;
+  font-size:25px;
+}
+
+
+/* ################# FORMULAIRES ##############  */
+
+form{
+  margin:auto;
+}
+
+form p{
+  margin: 20px;
+  line-height:30px;
+}
+
+input {
+  background-color: #D4F3FF;
+  color: #445DEC;
+  text-align:center;
+  width:150px;
+}
+.categorie1, .categorie2, .categorie3{
+  border-right: dashed #5B6DCD 3px;
+}
+.double_mixte{
+  margin-right:auto;
+}
+.simple {
+  color:#3492eb;
+}
+.double {
+  color:#3a34eb;
+}
+.mixte {
+  color: #8f34eb;
+}
+.inputJ1{
+  margin-left:2%;
+}
+
+.btn-secondary {
+  width:50px;
+  background-color: #a8a8a8;
+  border-color: #6c757d;
+  box-shadow:none;
+}
+
+.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+border-top-right-radius:0.25rem;
+border-bottom-right-radius:0.25rem;
+}
+
+.btn-secondary:hover {
+  background-color: #5a8dfa;
+  cursor:pointer;
+}
+
+
+
+.btn-secondary.focus {
+  background-color: #345beb;
+  box-shadow: none;
+  border-color:none;
+
+}
+.btn-secondary:focus {
+  background-color: #345beb;
+  box-shadow: none;
+  border-color:none;
+
+}
+
+.btn-secondary:active {
+  background-color: #345beb;
+}
+
+input[type=checkbox], input[type=radio] {
+  width:10px;
+}
+
+/* ########## POPUP ########## */
+#popup {
+  position:absolute;
+  visibility: hidden;
+  opacity:0;
+  left:0;
+  top:0;
+  width:100vw;
+  height:100vh;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  transition:0.2s;
+}
+#popup.actif {
+  visibility: visible;
+  opacity:1;
+}
+#popup section {
+  position:absolute;
+  visibility: hidden;
+  opacity:0;
+  left:calc(50% - 250px);
+  top : 50%;
+  width:20%;
+  min-height:50px;
+  background-color: #0a0a0a;
+  box-shadow: 0 0 24px 5px #445DEC;
+  border:1px solid red;
+  font-weight: bold;
+  text-shadow: 0 0 24px red;
+  color:#445DEC;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#popup.actif section {
+  visibility: visible;
+  opacity:80;
+}
+form profil, section {
+  box-sizing: border-box;
+  min-width:500px;
+  padding:20px;
+}
+
+section table {
+  box-sizing: border-box;
+  width:100%;
+  border-collapse: collapse;
+  border: 1px solid white;
+  margin:0;
+  padding:0;
+}
+section table thead th {
+  padding:10px 20px;
+}
+section table tbody tr:not(.vide) {
+  background-color: var(--coul_menu);
+  cursor: pointer;
+  transition:0.25s;
+}
+section table tbody tr:not(.vide):hover {
+  background-color: var(--coul_menu_actif);
+}
+section table tbody td {
+  border:1px solid white;
+  padding:10px;
+}
+section form table tbody td {
+  padding:0;
+}
+section form table tbody td input {
+  margin:2px;
+}
+section table tbody tr.vide td {
+  text-align: left;
+  padding:5px;
+  color:white;
+}
+section table tbody tr.vide td.photo {
+  min-width:300px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* ################# END FORMULAIRES ##############  */
+
+
+
+footer {
+    position:fixed;
+    width:100%;
+    bottom:0;
+    text-align:center;
+    background-color:#445DEC;
+    color:white;
+    text-decoration:none;
+}
+.nom {
+  font-size:15px;
+  color:white;
+  text-decoration:none;
+}
+
+@media (max-width: 65em) {
+
+.col-sm-12{
+flex: 0 0 100%;
+max-width: 100%;
+}
+
+.categorie1, .categorie2, .categorie3 {
+border-right: none;
+}
+
+h1{
+  font-size:45px;
+}
+h2{
+  font-size:35px;
+  margin:auto;
+  width:70%;
+}
+
+p{
+  font-size: 25px;
+}
+span{
+  font-size:25px;
+
+}
+input[type=submit]{
+  margin-bottom:10px;
+}
+
+form{
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+input{
+  margin-top:1%;
+}
+
+.inputJ1{
+  margin-left:0.75%;
+}
+
+.double_mixte{
+  margin-right:-30px;
+}
+
+.mixtedouble{
+  margin-top:1%;
+}
+a {
+  font-size:35px;
+}
+#btnPouleElim, #btnPouleUnique, #btnInterclubsDouble, #btnElimDirecte, #btnInterclubICD, #btnInterclubICR, #btnInterclubICN, #btnInterclubTPE{
+  width:25%;
+  font-size: 25px;
+}
+}
+@media (orientation: landscape) {
+  body {
+    flex-direction: column;
+  }
+  .container {
+    margin-bottom:50px;
+  }
+  .footer {
+    bottom:10px;
+  }
+  h1{
+    font-size:25px;
+  }
+}

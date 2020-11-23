@@ -1,0 +1,71 @@
+.minoration{
+  color:green;
+}
+.majoration{
+  color:red;
+}
+
+.container{
+  text-align:center;
+  margin-top: 5%;
+  font-size:25px;
+  line-height: 3rem;
+}
+
+.total{
+  color:green;
+}
+.vert{
+	width:20px;
+	height:20px;
+	background:green;
+	border-radius:100px;
+}
+.bleu{
+	width:20px;
+	height:20px;
+	background:blue;
+	border-radius:100px;
+}
+.rouge{
+	width:20px;
+	height:20px;
+	background:red;
+	border-radius:100px;
+}
+
+.col-sm-12.col-sx-12.col-md-3.col-lg-3.legende span{
+  position:relative;
+  margin-left: 30px;
+
+}
+@media (max-width: 65em) {
+  .container{
+    text-align:center;
+    line-height: 1.5;
+    font-size:35px;
+
+  }
+  .total{
+    font-size:35px;
+  }
+
+p{
+  font-size:35px;
+}
+@media (orientation: landscape) {
+  body {
+    flex-direction: column;
+  }
+  h1{
+    font-size:25px;
+  }
+  .container {
+    margin-bottom:50px;
+  }
+  input {
+    font-size:25px;
+  }
+
+
+}

@@ -1,0 +1,99 @@
+.forme_poule_elim, .forme_poule_unique, .forme_elim_directe{
+  text-align:center;
+  line-height: 1.8;
+  font-size:25px;
+  padding-bottom:5%;
+  border-bottom: dashed #5B6DCD 2px;
+
+}
+
+.anotherOne{
+  text-align:center;
+  font-size:25px;
+}
+
+.vainqueur {
+  font-weight:bold;
+  color:#00CE32;
+}
+
+
+
+.itc{
+  text-align:center;
+  font-size:25px;
+}
+
+.container.calcul_moyenne{
+  text-align:center;
+}
+
+input{
+  margin:10px;
+}
+.btn.btn-primary{
+position:relative;
+margin-top:2%;
+}
+.container.anotherOne {
+  margin-bottom:10%;
+}
+
+footer{
+  font-size:15px;
+}
+
+@media (max-width: 65em) {
+  .forme_poule_elim, .forme_poule_unique, .forme_elim_directe{
+    text-align:center;
+    line-height: 1.5;
+    font-size:35px;
+
+  }
+  .vainqueur{
+    font-size:45px;
+  }
+  h3 {
+    font-size: 45px;
+  }
+  h4 {
+    margin-top:5%;
+    font-size: 40px;
+  }
+  #btnCalculTotal{
+    width:25%;
+    font-size: 25px;
+
+  }
+
+  a{
+    font-size:45px;
+  }
+
+  .container{
+    margin-top:10%;
+  }
+
+  input {
+    font-size:25px;
+  }
+  footer span{
+    font-size:15px;
+  }}
+
+
+@media (orientation: landscape) {
+  body {
+    flex-direction: column;
+  }
+  h1{
+    font-size:25px;
+  }
+  .container {
+    margin-bottom:50px;
+  }
+  input {
+    font-size:25px;
+  }
+
+}
